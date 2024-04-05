@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--th-theme-bg-color);
+    background: var(--th-theme-text-color);
+}
