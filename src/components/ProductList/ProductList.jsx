@@ -68,6 +68,7 @@ const ProductList = () => {
             totalPrice: getTotalPrice(addedItems),
             queryId,
         };
+
         fetch('https://localhost:8000', {
             method: 'POST',
             headers: {
@@ -75,6 +76,7 @@ const ProductList = () => {
             },
             body: JSON.stringify(data),
         });
+
         tg.sendData(JSON.stringify(data));
     }, []);
 
